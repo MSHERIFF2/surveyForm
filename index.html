@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title> Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport content=width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id='title' class="text-center">simliCodeCademy Survey Form</h1>
+                <p id="description" class="description text-center">Thank you
+                    for taking the time to help us improve the platform</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group>
+                    <label for="name" id="name-label"> Name
+                    </label>
+                    <input id="name" type="text" name="name" placeholder="Enter
+                        your name" required class="form-control">
+                </div>
+                <div class="form-group"><label for="email" id="email-label">
+                        Email</label>
+                    <input id="email" type="email" name="email"
+                        placeholder="Enter your Email" required
+                        class="form-control">
+                </div>
+                <div class="form-group"> <label for="age" id="number-label"> Age<span
+                            class="clue">(optional)</span></label>
+                    <input id="number" type="number" name="age"
+                        placeholder="Enter your age" required min="15" max='99'
+                        class="form-control">
+                </div>
+                <div class="form-group">
+                    <p>which option define your current role?</p>
+                    <select id="dropdown" class="form-control" name="role"
+                        required>
+                        <option disabled select value>select your current role</option>
+                        <option value="student">Student</option>
+                        <option value="Graduate">Graduate</option>
+                        <option value="Employed">Employed</option>
+                        <option value="unEmployed">Un-employed</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <p>Would you recommend simliCodeCademy to a friend?</p>
+                    <label id="yes-label">
+                        <input type='radio' value='Yes' name='bgroup'> Yes
+                        <label id="maybe-label">
+                            <input type='radio' value="Maybe" name='bgroup'>
+                            Maybe
+                        </label>
+                    </fieldset>
+
+
+                    <fieldset>
+                        <p> If you are employ remotely, how much will you prefer
+                            to be paid?</p>
+                        <label id="salary1-label">
+                            <input type='radio' value='money1' name='$100'> less
+                            than $100
+
+                        </label>
+                        <label id="salary2-label">
+                            <input type='radio' value='money2' name='$100+'>
+                            More than $100
+                        </label>
+
+                    </fieldset>
+
+                    <div class="form-group">
+                        <p> Which WebDev. option do you prefer to become?</p>
+                        <label>
+                            <input type="checkbox" value="Front"
+                                class="input-checkbox"> Front-End WebDeveloper
+                        </label>
+                        <label>
+
+                            <input type="checkbox" value="Back"
+                                class="input-checkbox"> Back-End WebDeveloper
+                        </label>
+                        <label>
+
+                            <input type="checkbox" value="Full"
+                                class="input-checkbox"> Full-Stack WebDeveloper
+                        </label>
+                        <div class="form-group">
+                            <p> Any comment or suggestions?</p>
+                            <textarea class="input-textarea" placeholder="Your
+                                suggestion or comment here...">
+
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="submit"
+                                class="submit-button">
+                        </div>
+
+                    </form>
+                </div>
+                <div class="form-group">
+                    <footer>
+                        <p> This page is created by <span>SHERIFFDEEN MURITALA
+                                ADEGOKE</span> CEO simliCodeCademy - 2022</p>
+                    </footer>
+                </body>
+
+            </html>
